@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/aiva-ng",
+            "outputPath": "dist/eit-prod",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -86,18 +86,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "aiva-ng:build"
+            "browserTarget": "eit-prod-ng:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "aiva-ng:build:production"
+              "browserTarget": "eit-prod-ng:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aiva-ng:build"
+            "browserTarget": "eit-prod-ng:build"
           }
         },
         "test": {
@@ -134,11 +134,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "aiva-ng:serve"
+            "devServerTarget": "eit-prod-ng:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "aiva-ng:serve:production"
+              "devServerTarget": "eit-prod-ng:serve:production"
             }
           }
         }
