@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeOneComponent } from './components/pages/home-one/home-one.component';
-import { HomeTwoComponent } from './components/pages/home-two/home-two.component';
+// import { HomeOneComponent } from './components/pages/home-one/home-one.component';
+// import { HomeTwoComponent } from './components/pages/home-two/home-two.component';
 import { HomeThreeComponent } from './components/pages/home-three/home-three.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { SolutionsComponent } from './components/pages/solutions/solutions.component';
@@ -23,9 +23,9 @@ import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privac
 import { ContactComponent } from './components/pages/contact/contact.component';
 
 const routes: Routes = [
-    {path: '', component: HomeOneComponent},
-    {path: 'home-two', component: HomeTwoComponent},
-    {path: 'home-three', component: HomeThreeComponent},
+    {path: '', component: HomeThreeComponent},
+    // {path: 'home-two', component: HomeTwoComponent},
+    // {path: 'home-three', component: HomeThreeComponent},
     {path: 'about', component: AboutComponent},
     {path: 'solutions', component: SolutionsComponent},
     {path: 'solutions-details', component: SolutionsDetailsComponent},
