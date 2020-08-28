@@ -16,7 +16,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class NavbarComponent implements OnInit {
 
     location: any;
-    navbarClass: any;
+    navbarClass: any = 'navbar-area three';
 
     constructor(
         private router: Router,
@@ -26,7 +26,8 @@ export class NavbarComponent implements OnInit {
         .subscribe((event) => {
             if ( event instanceof NavigationEnd ) {
                 this.location = this.router.url;
-                if (this.location == '/home-three'){
+                console.log(this.location);
+                if (this.location == '/'){
                     this.navbarClass = 'navbar-area three';
                 } else {
                     this.navbarClass = 'navbar-area';
